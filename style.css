@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    margin: 0;
 }
 
 .navbar-nav {
@@ -20,8 +21,8 @@ body {
     margin-top: 10%;
 } */
 
-.middle-container {
-    padding: 7% 0;
+.top-container {
+    padding: 5% 0;
 }
 
 .carousel-item {
@@ -30,4 +31,30 @@ body {
 
 .black-icon {
     filter: invert(100%);
+}
+
+.grey-card {
+    color: aliceblue;
+    background-color: grey;
+    margin: 1%;
+}
+
+.body-1, .body-2 {
+    padding: 2% 7%;
+}
+
+.card-title a {
+    color: honeydew;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-lg-3 a {
+    color: black;
+}
+
+.col-lg-3 a:hover {
+    text-decoration: none;
 }
