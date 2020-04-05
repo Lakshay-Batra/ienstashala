@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+.navbar-nav {
+    margin-right: 35%;
+}
+
+.internships, .trainings {
+    margin: 0 15%;
+}
+
+.right-margin {
+    margin-right: 10px;
+}
+
+/* .carousel {
+    padding: 7% 14%;
+    background-image: url("images/topBackground1.jpg");
+    margin-top: 10%;
+} */
+
+.middle-container {
+    padding: 7% 0;
+}
+
+.carousel-item {
+    padding: 3% 18%;
+}
+
+.black-icon {
+    filter: invert(100%);
+}
