@@ -29,7 +29,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Internships</a>
                     <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <table class="table table-striped">
+                        <table class="table table-striped x-small">
                             <thead>
                                 <tr>
                                     <th scope="col">Location</th>
@@ -39,19 +39,19 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="">Work from home</a></td>
-                                    <td><a href="">Computer Science Internship</a></td>
-                                    <td><a href="">Engineering Internship</a></td>
+                                    <td><a href="internships.html">Work from home</a></td>
+                                    <td><a href="internships.html">Computer Science Internship</a></td>
+                                    <td><a href="internships.html">Engineering Internship</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">Internship in Mumbai</a></td>
-                                    <td><a href="">Marketing Internship</a></td>
-                                    <td><a href="">MBA Internship</a></td>
+                                    <td><a href="internships.html">Internship in Mumbai</a></td>
+                                    <td><a href="internships.html">Marketing Internship</a></td>
+                                    <td><a href="internships.html">MBA Internship</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">Internship in Delhi</a></td>
-                                    <td><a href="">Finance Internship</a></td>
-                                    <td><a href="">Law Internship</a></td>
+                                    <td><a href="internships.html">Internship in Delhi</a></td>
+                                    <td><a href="internships.html">Finance Internship</a></td>
+                                    <td><a href="internships.html">Law Internship</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -61,7 +61,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online trainings</a>
                     <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <table class="table table-striped">
+                        <table class="table table-striped x-small">
                             <thead>
                                 <tr>
                                     <th scope="col">Programming</th>
@@ -90,10 +90,21 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <button style="margin-top: 2%;" class="btn btn-secondary right-margin">Login</button>
+                    <button style="margin-top: 2%;" onclick="window.location.href='login.html'"
+                        class="btn btn-secondary right-margin">Login</button>
                 </li>
                 <li class="nav-item dropdown">
-                    <button style="margin-top: 2%;" class="btn btn-secondary ">Register</button>
+                    <!-- <button style="margin-top: 2%;" class="btn btn-secondary ">Register</button> -->
+                    <div style="margin-top: 2%;" class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Register
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="registerStudent.html">As a Student</a>
+                            <a class="dropdown-item" href="registerEmployer.html">As an Employer </a>
+                        </div>
+                    </div>
                 </li>
 
             </ul>
@@ -110,7 +121,7 @@
                     <!-- 1 -->
                     <h2> Go ahead. <span><b>Get an internship</b></span> </h2>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Ex. MBA, design, android etc."
+                        <input type="text" class="form-control" placeholder="Ex. MBA, Design, Android etc."
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary btn-dark" type="button"
@@ -140,45 +151,47 @@
     <div class="body-1">
         <h4 style="padding: 1% 0;">Internship in popular cities</h4>
         <div class="row">
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Delhi-NCR</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Delhi-NCR</a></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Banglore</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Banglore</a></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="card grey-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="">Mumbai</a></h5>
+                    <div class="card-body" style="padding: 0;">
+                        <!-- <h5 class="card-title"><a href="">Mumbai</a></h5> -->
+                        <a href="internships.html"><img style="width: 100%; height: 100%;" src="images/mumbai.jpg"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Kolkata</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Kolkata</a></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Gurugram</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Gurugram</a></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Hydrabad</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Hydrabad</a></h5>
                     </div>
                 </div>
             </div>
@@ -194,47 +207,47 @@
             <div class="col-lg-2 col-md-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Part-time</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Part-time</a></h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Engineering</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Engineering</a></h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">NGO</a></h5>
+                        <h5 class="card-title"><a href="internships.html">NGO</a></h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Design</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Design</a></h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Science</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Science</a></h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <div class="card grey-card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Media</a></h5>
+                        <h5 class="card-title"><a href="internships.html">Media</a></h5>
                     </div>
                 </div>
             </div>
         </div>
-        <h5 style="margin-top: 2%;">or <a href="">View all internships ></a></h5>
+        <h5 style="margin-top: 2%;">or <a href="internships.html">View all internships ></a></h5>
     </div>
 
     <hr>
@@ -382,31 +395,63 @@
         <div class="row">
             <div class="col-lg-3 white-text">
                 <h6><u><b>Internships by places</b></u></h6>
-                <a href=""><p>Internship in India</p></a>
-                <a href=""><p>Internship in Delhi</p></a>
-                <a href=""><p>Internship in Mumbai</p></a>
-                <a href=""><p>Internship in Banglore</p></a>
+                <a href="internships.html">
+                    <p>Internship in India</p>
+                </a>
+                <a href="internships.html">
+                    <p>Internship in Delhi</p>
+                </a>
+                <a href="internships.html">
+                    <p>Internship in Mumbai</p>
+                </a>
+                <a href="internships.html">
+                    <p>Internship in Banglore</p>
+                </a>
             </div>
             <div class="col-lg-3 white-text">
                 <h6><u><b>Internships by places</b></u></h6>
-                <a href=""><p>Internship in India</p></a>
-                <a href=""><p>Internship in Delhi</p></a>
-                <a href=""><p>Internship in Mumbai</p></a>
-                <a href=""><p>Internship in Banglore</p></a>
+                <a href="internships.html">
+                    <p>Internship in India</p>
+                </a>
+                <a href="internships.html">
+                    <p>Internship in Delhi</p>
+                </a>
+                <a href="internships.html">
+                    <p>Internship in Mumbai</p>
+                </a>
+                <a href="internships.html">
+                    <p>Internship in Banglore</p>
+                </a>
             </div>
             <div class="col-lg-3 white-text">
                 <h6><u><b>Online Summer Trainings</b></u></h6>
-                <a href=""><p>Web Development</p></a>
-                <a href=""><p>Android App Development</p></a>
-                <a href=""><p>Programming with Python</p></a>
-                <a href=""><p>Data Science</p></a>
+                <a href="internships.html">
+                    <p>Web Development</p>
+                </a>
+                <a href="internships.html">
+                    <p>Android App Development</p>
+                </a>
+                <a href="internships.html">
+                    <p>Programming with Python</p>
+                </a>
+                <a href="internships.html">
+                    <p>Data Science</p>
+                </a>
             </div>
             <div class="col-lg-3 white-text">
                 <h6><u><b>About Iniestashala</b></u></h6>
-                <a href=""><p>About us</p></a>
-                <a href=""><p>We're hiring</p></a>
-                <a href=""><p>Hire interns for your company</p></a>
-                <a href=""><p>Blog</p></a>
+                <a href="internships.html">
+                    <p>About us</p>
+                </a>
+                <a href="internships.html">
+                    <p>We're hiring</p>
+                </a>
+                <a href="internships.html">
+                    <p>Hire interns for your company</p>
+                </a>
+                <a href="">
+                    <p>Blog</p>
+                </a>
                 <button class="btn btn-dark"><i class="fab fa-google-play"></i>Download</button>
             </div>
         </div>
