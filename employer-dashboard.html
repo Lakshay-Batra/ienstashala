@@ -12,14 +12,26 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/18dd5346aa.js" crossorigin="anonymous"></script>
+    <style>
+        #opaque {
+            padding: 0.5% 0;
+            opacity: 0.7;
+            border-radius: 10px;
+        }
+        #opacity {
+            opacity: 0.6;
+            border-radius: 20px 20px 0 0;
+            padding: 0.5% 0;
+        }
+    </style>
 
 </head>
 
-<body>
+<body class="bg-light">
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" style="font-size:x-large;" href="#"><i class="fab fa-invision"></i> INIESTASHALA</a>
         <ul class="nav nav-pills ml-auto">
             <li class="nav-item">
@@ -34,19 +46,55 @@
 
 
     <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade " id="dashboard" role="tabpanel" aria-labelledby="pills-home-tab">Dashboard</div>
+
+
+        <!---------------------------------------- dashboard ------------------------------->
+        <div class="tab-pane fade " id="dashboard" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <div id="opacity" class="bg-primary text-light border text-center mt-3">
+                            <h3>Applications</h3>
+                        </div>
+                        <table class="table table-striped text-left">
+                            <thead>
+                              <tr>
+                                <th scope="col">Profile</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Deep Learning</td>
+                                <td class="text-primary">Under Review</td>
+                                <td>...</td>
+                              </tr>
+                              <tr>
+                                <td>Machine Learning</td>
+                                <td class="text-primary">Under Review</td>
+                                <td>...</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------- Post internship ------------------------------->
         <div class="tab-pane fade show active" id="post-internship" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
-                        <h3>
-                            Post an internship
-                        </h3>
+                        <div id="opaque" class="bg-primary text-light mt-3">
+                            <h3>Post an internship</h3>
+                        </div>
                         <p><a href="">(Important Guidelines)</a></p>
                         <p>Need assistance? Please visit <a href="">Help center</a></p>
                         <h6>Internship Details</h6>
                         <div style="text-align: left;" class="jumbotron">
-                            <h6>Profile</h6>
+                            <h6 class="text-center">Profile</h6>
                             <form action="">
                                 <div class="row">
                                     <div class="column">
@@ -109,7 +157,7 @@
                                     </div>
                                 </div>
                             </form><br>
-                            <h6>Internship type</h6>
+                            <h6 class="text-center">Internship type</h6>
                             <div class="row">
                                 <div>
                                     <input name="type" type="radio">
@@ -121,7 +169,7 @@
                                 </div>
                             </div><br>
                             <h6>City/Cities</h6>
-                            <input class="form-control" type="text" placeholder="eg.Mumbai">
+                            <input class="form-control" type="text" placeholder="eg.Mumbai"><br>
                             <input type="checkbox" name="" id=""><label for="">Allow application for above or
                                 neighbouring cities.</label><br>
                             <div class="custom-control custom-switch">
@@ -129,7 +177,7 @@
                                 <label class="custom-control-label" for="customSwitch1">Is part-time allowed?</label>
                             </div><br>
                             <input type="text" class="form-control" placeholder="Number of openings eg.4"><br>
-                            <h6>Internship start date</h6>
+                            <h6 class="text-center">Internship start date</h6>
                             <div class="row">
                                 <div>
                                     <input name="start-date" type="radio">
@@ -145,11 +193,11 @@
                                 placeholder="shorter the duration more the applications">
                             <br>
                             <h6>Intern's Responsibilities</h6>
-                            <textarea name="" id="" cols="32" rows="5"></textarea>
+                            <textarea name="" id="" cols="32" rows="5" class="form-control"></textarea>
                             <hr>
                             <h5>Stipend and Perks</h5>
                             <hr>
-                            <h6>Stipend</h6>
+                            <h6  class="text-center">Stipend</h6>
                             <div class="row">
                                 <div>
                                     <input name="stipend" type="radio">
@@ -168,16 +216,19 @@
                                     <label>Unpaid</label>
                                 </div>
                             </div>
-                            <select name="" id="">
-                                <option selected value="">₹</option>
-                                <option value="">$</option>
-                            </select>
-                            <input type="text" placeholder="eg 10000">
-                            <select name="" id="">
-                                <option selected value="">/month</option>
-                                <option value="">/week</option>
-                            </select><br><br>
-                            <h6>Perks(optional)</h6>
+                            <div class="justify-content-md-center text-center">
+                                <select name="" id="">
+                                    <option selected value="">₹</option>
+                                    <option value="">$</option>
+                                </select>
+                                <input type="text" placeholder="eg 10000">
+                                <select name="" id="">
+                                    <option selected value="">/month</option>
+                                    <option value="">/week</option>
+                                </select>
+                            </div>
+                            <br><br>
+                            <h6  class="text-center">Perks(optional)</h6>
                             <div class="row">
                                 <div class="column">
                                     <div>
@@ -227,9 +278,12 @@
                             <p><b>Question 1:</b> Why should you be hired for this role?</p>
                             <p><b>Question 2:</b> Are you available for 1 month starting immediately, for a full time
                                 internship?</p>
-                            <p><a href="">+ Add another question</a></p>
+                            <p><a href="">+ Add another question</a></p><br>
+                            <div class="text-center">
+                                <button class="btn btn-secondary">Save Draft</button>&nbsp;<button class="btn btn-info">Post Internship</button>
+                            </div>
                         </div>
-                        <button class="btn btn-secondary">Save Draft</button>&nbsp;<button class="btn btn-info">Post Internship</button>
+                        <br>
                     </div>
                 </div>
             </div>
