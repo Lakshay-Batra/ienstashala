@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INIESTASHALA</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/18dd5346aa.js" crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background-image: -webkit-linear-gradient(65deg, rgba(105, 211, 230, 0.479), rgb(255, 255, 255));
+            text-align: center;
+        }
+
+        .nav-container {
+            padding: 1% 5%;
+            border-radius: 50px;
+            opacity: 0.9;
+        }
+
+        .heading {
+            padding: 0.5%;
+            border-radius: 0 0 100px 100px;
+            opacity: 0.9;
+        }
+
+        table {
+            font-size: 11px;
+            width: 100%;
+            margin: 0;
+        }
+
+        td div {
+            width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        th,
+        td {
+            padding: 4px;
+            border: 1px solid white;
+            margin: 0;
+        }
+
+        td a {
+            color: black;
+        }
+
+        td a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="heading bg-dark text-light">Admin Panel</h1>
+
+    <div class="nav-container container bg-dark text-light mt-2">
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-jobs-tab" data-toggle="tab" href="#nav-jobs" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Posted Jobs</a>
+                <a class="nav-item nav-link" id="nav-user-tab" data-toggle="tab" href="#nav-user" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Users</a>
+                <a class="nav-item nav-link" id="nav-status-tab" data-toggle="tab" href="#nav-status" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Application Status</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="tab-content" id="nav-tabContent">
+        <!------------------------------------------- Jobs ------------------------------------------------------->
+        <div class="tab-pane fade show active mt-2 ml-1 mr-1 table-responsive" id="nav-jobs" role="tabpanel"
+            aria-labelledby="nav-jobs-tab">
+            <table class="mr-auto ml-auto mt-4">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Action</th>
+                        <th>job</th>
+                        <th>work_home</th>
+                        <th>part_time</th>
+                        <th>start_date</th>
+                        <th>duration</th>
+                        <th>internship_women</th>
+                        <th>job_offer</th>
+                        <th>company_name</th>
+                        <th>location</th>
+                        <th>stipend</th>
+                        <th>posted_on</th>
+                        <th>apply_by</th>
+                        <th>category</th>
+                        <th>openings</th>
+                        <th>responsibilities</th>
+                        <th>perks</th>
+                        <th>skills</th>
+                        <th>questions</th>
+                        <th>description</th>
+                        <th>owner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt fa-2x"></i></a></td>
+                        <td><a href=""><i class="far fa-check-circle text-success fa-2x"></i></a> <br><br>
+                            <a href=""><i class="far fa-times-circle text-danger fa-2x"></i></a></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>0</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>1000</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>
+                            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quaerat cum.
+                                Consequuntur rem eveniet saepe corrupti, placeat esse unde dolores autem minima
+                                voluptate molestias deleniti exercitationem molestiae sed necessitatibus sapiente?</div>
+                        </td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi velit labore vel
+                                debitis! Dolores suscipit molestiae quo maiores a, omnis accusantium eveniet similique
+                                ea maxime illum soluta quidem excepturi ab.</div>
+                        </td>
+                        <td>github.com</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt fa-2x"></i></a></td>
+                        <td><a href=""><i class="far fa-check-circle text-success fa-2x"></i></a> <br><br>
+                            <a href=""><i class="far fa-times-circle text-danger fa-2x"></i></a></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>0</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>1000</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td>
+                            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quaerat cum.
+                                Consequuntur rem eveniet saepe corrupti, placeat esse unde dolores autem minima
+                                voluptate molestias deleniti exercitationem molestiae sed necessitatibus sapiente?</div>
+                        </td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi velit labore vel
+                                debitis! Dolores suscipit molestiae quo maiores a, omnis accusantium eveniet similique
+                                ea maxime illum soluta quidem excepturi ab.</div>
+                        </td>
+                        <td>github.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!------------------------------------------- User ------------------------------------------------------->
+        <div class="tab-pane fade mt-2 ml-1 mr-1 table-responsive" id="nav-user" role="tabpanel"
+            aria-labelledby="nav-user-tab">
+            <table class="mr-auto ml-auto mt-4">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Action</th>
+                        <th>first_name</th>
+                        <th>last_name</th>
+                        <th>phone</th>
+                        <th>email</th>
+                        <th>password</th>
+                        <th>is_employer</th>
+                        <th>city1</th>
+                        <th>city2</th>
+                        <th>type</th>
+                        <th>job_pre_1</th>
+                        <th>job_pre_2</th>
+                        <th>job_pre_3</th>
+                        <th>city_pre_1</th>
+                        <th>city_pre_2</th>
+                        <th>city_pre_3</th>
+                        <th>education</th>
+                        <th>internships</th>
+                        <th>trainings</th>
+                        <th>projects</th>
+                        <th>work_samples</th>
+                        <th>skills</th>
+                        <th>additional_details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt fa-2x"></i></a></td>
+                        <td><a href=""><i class="far fa-check-circle text-success fa-2x"></i></a> <br><br>
+                            <a href=""><i class="far fa-times-circle text-danger fa-2x"></i></a></td>
+                        <td>Lakshay</td>
+                        <td>Batra</td>
+                        <td>8571073874</td>
+                        <td>lakshaybatra@gmail.com</td>
+                        <td>asafffasfsas</td>
+                        <td>0</td>
+                        <td>sonipat</td>
+                        <td>delhi</td>
+                        <td>XYZ</td>
+                        <td>full-time work from home</td>
+                        <td>3D painting</td>
+                        <td>Web development</td>
+                        <td>React development</td>
+                        <td>sonipat</td>
+                        <td>delhi</td>
+                        <td>12th 2017</td>
+                        <td>Iniesta Web-tech</td>
+                        <td>Web development</td>
+                        <td>to-do-list Daily-Journal etc</td>
+                        <td>github.com</td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ex nihil
+                                repellendus sint. Natus atque delectus deserunt dolor alias deleniti ea esse sapiente,
+                                magni explicabo vel accusamus libero laboriosam reiciendis!</div>
+                        </td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dignissimos ipsa.
+                                Reprehenderit distinctio similique placeat minima, quis sed veniam ad, sit deserunt
+                                excepturi debitis accusantium temporibus in ipsa autem praesentium.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt fa-2x"></i></a></td>
+                        <td><a href=""><i class="far fa-check-circle text-success fa-2x"></i></a> <br><br>
+                            <a href=""><i class="far fa-times-circle text-danger fa-2x"></i></a></td>
+                        <td>Lakshay</td>
+                        <td>Batra</td>
+                        <td>8571073874</td>
+                        <td>lakshaybatra@gmail.com</td>
+                        <td>asafffasfsas</td>
+                        <td>0</td>
+                        <td>sonipat</td>
+                        <td>delhi</td>
+                        <td>XYZ</td>
+                        <td>full-time work from home</td>
+                        <td>3D painting</td>
+                        <td>Web development</td>
+                        <td>React development</td>
+                        <td>sonipat</td>
+                        <td>delhi</td>
+                        <td>12th 2017</td>
+                        <td>Iniesta Web-tech</td>
+                        <td>Web development</td>
+                        <td>to-do-list Daily-Journal etc</td>
+                        <td>github.com</td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ex nihil
+                                repellendus sint. Natus atque delectus deserunt dolor alias deleniti ea esse sapiente,
+                                magni explicabo vel accusamus libero laboriosam reiciendis!</div>
+                        </td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dignissimos ipsa.
+                                Reprehenderit distinctio similique placeat minima, quis sed veniam ad, sit deserunt
+                                excepturi debitis accusantium temporibus in ipsa autem praesentium.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!------------------------------------------- Status ------------------------------------------------------->
+        <div class="tab-pane fade mt-2 ml-1 mr-1" id="nav-status" role="tabpanel" aria-labelledby="nav-status-tab">
+            <table class="mr-auto ml-auto mt-4">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>company_id</th>
+                        <th>applicant_id</th>
+                        <th>answers</th>
+                        <th>date</th>
+                        <th>app_status</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt fa-2x"></i></a></td>
+                        <td>1</td>
+                        <td>abc@gmail.com</td>
+                        <td>
+                            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque deserunt
+                                consequatur tempora sapiente alias ea recusandae dignissimos. Aliquam quibusdam ullam
+                                fuga velit cum, quas natus doloribus expedita libero repellendus accusamus.</div>
+                        </td>
+                        <td>2002-07-19</td>
+                        <td>Rejected</td>
+
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt fa-2x"></i></a></td>
+                        <td>2</td>
+                        <td>abc@gmail.com</td>
+                        <td>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta, deserunt, sed
+                                ipsa consequatur repudiandae possimus voluptatum voluptas impedit ad, numquam ab?
+                                Deleniti, quod omnis ea optio saepe beatae explicabo.</div>
+                        </td>
+                        <td>2002-07-19</td>
+                        <td>Accepted</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>
